@@ -164,6 +164,7 @@ header a:hover {
 
 #projects .project img {
     width: 100%;
+    border-radius: 2rem;
 }
 
 #projects a {
