@@ -141,6 +141,34 @@ header a:hover {
     max-width: 100%;
 }
 
+/* Projects */
+
+#projects .projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#projects .col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 1rem;
+}
+
+#projects .project {
+    width: 100%;
+    text-align: center;
+}
+
+#projects .project img {
+    max-width: 100%;
+}
+
+#projects a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* Footer */
 
 footer {
