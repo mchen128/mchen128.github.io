@@ -153,7 +153,8 @@ header a:hover {
     display: flex;
     flex-direction: column;
     width: 45%;
-    margin: 1rem;
+    margin: 2%;
+    justify-content: space-between;
 }
 
 #projects .project {
@@ -162,7 +163,7 @@ header a:hover {
 }
 
 #projects .project img {
-    max-width: 100%;
+    width: 100%;
 }
 
 #projects a {
