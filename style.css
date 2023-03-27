@@ -4,7 +4,9 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color:lightgray;
+    color: rgba(255, 255, 255, 0.9);
+    background-image: url(images/dark-gradient.avif);
+    background-size: cover;
     max-width: 1024px;
     justify-content: center;
     display: flex;
@@ -15,10 +17,11 @@ body {
 /* Header */
 
 header {
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.25);
     text-align: center;
-    margin-top: 1rem;
-    border-radius: 1.875rem;;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    border-radius: 1.875rem;
 }
 
 header h1 {
@@ -39,5 +42,47 @@ header ul {
 
 header li {
     display: inline;
-    padding: 0.5rem;
 }
+
+header ul a {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 1.75rem;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+header a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Intro */
+
+#intro {
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-top: 2rem;
+    border-radius: 1.875rem;
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+#intro .img-container {
+    float: left;
+    max-width: 10rem;
+    height: auto;
+    margin: 0 1rem 1rem 0;
+}
+
+#intro img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* About */
