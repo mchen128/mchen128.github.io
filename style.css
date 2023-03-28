@@ -49,6 +49,20 @@ strong {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 500px) {
+    section {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2.125rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
 /* Header */
 
 header {
@@ -98,6 +112,18 @@ header a:hover {
     color: white;
 }
 
+@media only screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
 /* Intro */
 
 #intro .img-container {
@@ -111,6 +137,15 @@ header a:hover {
     max-width: 100%;
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 500px) {
+    #intro .img-container {
+        float: none;
+        max-width: 80%;
+        margin: 0 auto 1rem;
+    }
+}
+
 
 /* About */
 
@@ -126,19 +161,24 @@ header a:hover {
 
 #about .skills-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 #about .code-container {
     width: 7rem;
     height: auto;
-    margin: 1rem;
+    margin: 1%;
     text-align: center;
 }
 
 #about .code-container img {
     max-width: 100%;
+}
+
+@media only screen and (max-width: 1032px) {
+    #about .code-container p {
+        display: none;
+    }
 }
 
 /* Projects */
@@ -216,6 +256,29 @@ header a:hover {
     margin: 2rem;
 }
 
+@media only screen and (max-width: 814px) {
+    #projects .projects-container {
+        flex-direction: column;
+    }
+
+    #projects .col {
+        width: 100%;
+        margin: 0;
+    }
+
+    #projects .project {
+        background-size: cover;
+    }
+
+    #projects #test-entry {
+        aspect-ratio: 16 / 8;
+        background-position: top;
+    }
+
+    #projects .text-container {
+        opacity: 1;
+    }
+}
 
 /* Contact */
 
@@ -231,8 +294,13 @@ header a:hover {
 
 #contact img {
     max-width: 100%;
-    /* filter: drop-shadow(0 0 0 black); */
     transition: filter 0.25s;
+}
+
+@media only screen and (max-width: 690px) {
+    #contact a {
+        max-width: 4rem;
+    }
 }
 
 /* Footer */
