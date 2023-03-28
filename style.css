@@ -202,7 +202,7 @@ header a:hover {
     width: 100%;
     text-align: center;
     background-position: center;
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
     border-radius: 3rem;
     margin: 1rem 0;
@@ -212,7 +212,7 @@ header a:hover {
 #projects #test-entry {
     background-image: url(images/projects/test-entry-pass.png);
     aspect-ratio: 1 / 1.7;
-    background-size: 110%;
+    background-size: 112%;
 }
 
 #projects #rhythm-hero {

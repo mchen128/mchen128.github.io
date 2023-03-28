@@ -8,14 +8,14 @@ const projectArray = [testEntry, rhythmHero, fotomatic, victoryAgency];
 for (let project of projectArray) {
     project.addEventListener('mouseover', () => {
         project.children[0].children[0].style.opacity = 1;
-        project.style.backgroundSize = '120%';
+        project.style.backgroundSize = '115%';
     });
     project.addEventListener('mouseout', () => {
         project.children[0].children[0].style.opacity = 0;
         if (project === testEntry){
-            project.style.backgroundSize = '110%';
+            project.style.backgroundSize = '112%';
         } else {
-            project.style.backgroundSize = '100%';
+            project.style.backgroundSize = '110%';
         }
     });
 }
