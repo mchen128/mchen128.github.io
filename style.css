@@ -235,8 +235,13 @@ header a:hover {
     visibility: hidden;
 }
 
-#projects a {
+#projects .link {
     color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+}
+
+#projects .link:hover {
+    cursor: pointer;
 }
 
 #projects .text-container {
@@ -254,6 +259,29 @@ header a:hover {
 #projects h3 {
     text-align: center;
     margin: 2rem;
+}
+
+#OVER{
+    width:100%; 
+    height:100%; 
+    left:0;/*IE*/ 
+    top:0; 
+    text-align:center; 
+    z-index:5; 
+    position:fixed; 
+    background-color:#fff;
+}
+
+.overlay {
+    width:100%; 
+    z-index:6; 
+    left:0;/*IE*/ 
+    top:30%; 
+    color:#cdcdcd; 
+    font-size:0.8em; 
+    text-align:center; 
+    position:fixed; 
+    background-color:#000;
 }
 
 @media only screen and (max-width: 814px) {
