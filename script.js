@@ -18,6 +18,13 @@ for (let project of projectArray) {
             project.style.backgroundSize = '110%';
         }
     });
+
+    project.addEventListener('mousedown', () => {
+        let popup = document.createElement('div');
+        popup.setAttribute('id', 'overlay1')
+        popup.innerHTML = '<div class="overlay"><h1>Hello</h1></div>';
+        document.body.appendChild(popup);
+    }) 
 }
 
 const gmailIcon = document.getElementById('gmail');
