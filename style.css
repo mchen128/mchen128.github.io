@@ -162,15 +162,17 @@ header a:hover {
     width: 100%;
     text-align: center;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 3rem;
-    margin: 1rem;
+    margin: 1rem 0;
+    transition: background-size 0.3s;
 }
 
 #projects #test-entry {
     background-image: url(images/projects/test-entry-pass.png);
-    aspect-ratio: 1 / 1.5;
+    aspect-ratio: 1 / 1.7;
+    background-size: 110%;
 }
 
 #projects #rhythm-hero {
@@ -205,6 +207,8 @@ header a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 #projects h3 {
