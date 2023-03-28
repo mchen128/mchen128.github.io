@@ -153,6 +153,7 @@ header a:hover {
     display: flex;
     flex-direction: column;
     width: 45%;
+    height: auto;
     margin: 2%;
     justify-content: space-between;
 }
@@ -160,16 +161,57 @@ header a:hover {
 #projects .project {
     width: 100%;
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    margin: 1rem;
+}
+
+#projects #test-entry {
+    background-image: url(images/projects/test-entry-pass.png);
+    aspect-ratio: 1 / 1.5;
+}
+
+#projects #rhythm-hero {
+    background-image: url(images/projects/rhythm-hero.png);
+    aspect-ratio: 16 / 8;
+}
+
+#projects #fotomatic {
+    background-image: url(images/projects/fotomatic-desktop.png);
+    aspect-ratio: 16 / 8;
+}
+
+#projects #tea-cozy {
+    background-image: url(images/projects/tea-cozy1.png);
+    aspect-ratio: 16 / 8;
 }
 
 #projects .project img {
     width: 100%;
-    border-radius: 2rem;
+    visibility: hidden;
 }
 
 #projects a {
     color: rgba(255, 255, 255, 0.9);
 }
+
+#projects .text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    margin: 0;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects h3 {
+    text-align: center;
+    margin: 2rem;
+}
+
 
 /* Contact */
 
