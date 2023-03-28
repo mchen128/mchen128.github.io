@@ -1,9 +1,9 @@
 const testEntry = document.getElementById('test-entry');
 const rhythmHero = document.getElementById('rhythm-hero');
 const fotomatic = document.getElementById('fotomatic');
-const teaCozy = document.getElementById('tea-cozy');
+const victoryAgency = document.getElementById('victory-agency');
 
-const projectArray = [testEntry, rhythmHero, fotomatic, teaCozy];
+const projectArray = [testEntry, rhythmHero, fotomatic, victoryAgency];
 
 for (let project of projectArray) {
     project.addEventListener('mouseover', () => {
