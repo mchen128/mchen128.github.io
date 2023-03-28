@@ -361,7 +361,7 @@ footer .container {
     z-index:5; 
     position:fixed; 
     background-color: rgba(0, 0, 0, 0.5);
-    visibility: visible;
+    visibility: hidden;
 }
 
 #popups .container {
