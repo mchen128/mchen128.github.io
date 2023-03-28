@@ -226,11 +226,13 @@ header a:hover {
 }
 
 #contact a {
-    max-width: 5rem;
+    max-width: 8rem;
 }
 
 #contact img {
     max-width: 100%;
+    /* filter: drop-shadow(0 0 0 black); */
+    transition: filter 0.25s;
 }
 
 /* Footer */
