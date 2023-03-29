@@ -444,3 +444,26 @@ footer .container {
 #popups #phone {
     max-width: 30%;
 }
+
+@media only screen and (max-width: 814px){
+    #popups .content {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 0.5rem 2rem 0 3rem;
+        border-radius: 1.875rem;
+        text-align: left;
+        overflow-y: scroll;
+    }
+
+    #popups h2 {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    #popups h2 {
+        margin: 2rem 0;
+    }
+}
