@@ -1,4 +1,4 @@
-// TO-DO: Change code to be more versatile please
+// TO-DO: Change code to be more versatile
 
 /* Add listeners for project buttons */
 
