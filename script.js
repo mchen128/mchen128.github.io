@@ -25,21 +25,25 @@ for (let project of projectArray) {
         });
     }
 
+    let popUp;
     project.addEventListener('mousedown', () => {
         switch (project) {
             case testEntry:
-                document.getElementById('test-entry-popup').style.visibility = 'visible';
+                popUp = document.getElementById('test-entry-popup');
                 break;
             case rhythmHero:
-                document.getElementById('rhythm-hero-popup').style.visibility = 'visible';
+                popUp = document.getElementById('rhythm-hero-popup');
                 break;
             case fotomatic:
-                document.getElementById('fotomatic-popup').style.visibility = 'visible';
+                popUp = document.getElementById('fotomatic-popup');
                 break;
             case victoryAgency:
-                document.getElementById('victory-agency-popup').style.visibility = 'visible';
+                popUp = document.getElementById('victory-agency-popup');
                 break;
         }
+        popUp.style.visibility = 'visible';
+        popUp.children[0].style.top = 0;
+        popUp.style.opacity = 1;
     }) 
 }
 
@@ -53,21 +57,29 @@ const victoryAgencyX = document.getElementById('victory-agency-popup').children[
 const buttonArray = [testEntryX, rhythmHeroX, fotomaticX, victoryAgencyX];
 
 for (let xButton of buttonArray) {
+    let popUp;
     xButton.addEventListener('mousedown', () => {
         switch (xButton) {
             case testEntryX:
-                document.getElementById('test-entry-popup').style.visibility = 'hidden';
+                popUp = document.getElementById('test-entry-popup');
                 break;
             case rhythmHeroX:
-                document.getElementById('rhythm-hero-popup').style.visibility = 'hidden';
+                popUp = document.getElementById('rhythm-hero-popup');
                 break;
             case fotomaticX:
-                document.getElementById('fotomatic-popup').style.visibility = 'hidden';
+                popUp = document.getElementById('fotomatic-popup');
                 break;
             case victoryAgencyX:
-                document.getElementById('victory-agency-popup').style.visibility = 'hidden';
+                popUp = document.getElementById('victory-agency-popup');
                 break;
         }
+        
+        popUp.style.opacity = 0;
+        popUp.children[0].style.top = "2%";
+        setTimeout(() => {
+            popUp.style.visibility = 'hidden';
+            popUp.children[0].style.top = "-2%";
+        } ,500) 
     });
 }
 

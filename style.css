@@ -331,18 +331,21 @@ footer .container {
 #popups .project-popup {
     width:100%; 
     height:100%; 
-    left:0;/*IE*/ 
-    top:0; 
+    left: 0;/*IE*/ 
+    top: 0; 
     text-align:center; 
     z-index:5; 
     position:fixed; 
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
 }
 
 #popups .container {
     z-index:6; 
-    top: 0; 
+    top: -2%; 
     text-align:center; 
     position: fixed; 
     left: 50%;
@@ -357,6 +360,8 @@ footer .container {
     width: 80%;
     height: 95%;
     overflow: hidden;
+    transition-property: top;
+    transition-duration: 0.4s;
 }
 
 #popups .content {
