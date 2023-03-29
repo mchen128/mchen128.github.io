@@ -407,16 +407,12 @@ footer .container {
 }
 
 #popus a:hover {
-    text-decoration: none;
+    text-decoration:none;
 }
 
 #popups a:active {
     color: rgba(255, 180, 68, 0.9);
     text-decoration: none;
-}
-
-#popups a:visited {
-    color: rgba(239, 68, 255, 0.9);
 }
 
 #popups h3 {
