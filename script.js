@@ -1,3 +1,7 @@
+// TO-DO: Change code to be more versatile please
+
+/* Add listeners for project buttons */
+
 const testEntry = document.getElementById('test-entry');
 const rhythmHero = document.getElementById('rhythm-hero');
 const fotomatic = document.getElementById('fotomatic');
@@ -20,12 +24,52 @@ for (let project of projectArray) {
     });
 
     project.addEventListener('mousedown', () => {
-        let popup = document.createElement('div');
-        popup.setAttribute('id', 'overlay1')
-        popup.innerHTML = '<div class="overlay"><h1>Hello</h1></div>';
-        document.body.appendChild(popup);
+        switch (project) {
+            case testEntry:
+                document.getElementById('test-entry-popup').style.visibility = 'visible';
+                break;
+            case rhythmHero:
+                document.getElementById('rhythm-hero-popup').style.visibility = 'visible';
+                break;
+            case fotomatic:
+                document.getElementById('fotomatic-popup').style.visibility = 'visible';
+                break;
+            case victoryAgency:
+                document.getElementById('victory-agency-popup').style.visibility = 'visible';
+                break;
+        }
     }) 
 }
+
+/* Add listeners for x buttons */
+
+const testEntryX = document.getElementById('test-entry-popup').children[0].children[0].children[0];
+const rhythmHeroX = document.getElementById('rhythm-hero-popup').children[0].children[0].children[0];
+const fotomaticX = document.getElementById('fotomatic-popup').children[0].children[0].children[0];
+const victoryAgencyX = document.getElementById('victory-agency-popup').children[0].children[0].children[0];
+
+const buttonArray = [testEntryX, rhythmHeroX, fotomaticX, victoryAgencyX];
+
+for (let xButton of buttonArray) {
+    xButton.addEventListener('mousedown', () => {
+        switch (xButton) {
+            case testEntryX:
+                document.getElementById('test-entry-popup').style.visibility = 'hidden';
+                break;
+            case rhythmHeroX:
+                document.getElementById('rhythm-hero-popup').style.visibility = 'hidden';
+                break;
+            case fotomaticX:
+                document.getElementById('fotomatic-popup').style.visibility = 'hidden';
+                break;
+            case victoryAgencyX:
+                document.getElementById('victory-agency-popup').style.visibility = 'hidden';
+                break;
+        }
+    });
+}
+
+/* Add listeners for contact icons */
 
 const gmailIcon = document.getElementById('gmail');
 const linkedinIcon = document.getElementById('linkedin');
