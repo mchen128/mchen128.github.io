@@ -26,7 +26,7 @@ for (let project of projectArray) {
     }
 
     let popUp;
-    project.addEventListener('mousedown', () => {
+    project.addEventListener('click', () => {
         switch (project) {
             case testEntry:
                 popUp = document.getElementById('test-entry-popup');
@@ -58,7 +58,7 @@ const buttonArray = [testEntryX, rhythmHeroX, fotomaticX, victoryAgencyX];
 
 for (let xButton of buttonArray) {
     let popUp;
-    xButton.addEventListener('mousedown', () => {
+    xButton.addEventListener('click', () => {
         switch (xButton) {
             case testEntryX:
                 popUp = document.getElementById('test-entry-popup');
